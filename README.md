@@ -2,12 +2,17 @@
 ```
 git clone --recurse-submodules https://github.com/thomas-roos/yocto_example.git
 ```
-# build the image:
+# build:
 ```
 cd yocto_example
 ./build.sh
 ```
-# this repo was build with:
+# test:
+```
+cd yocto_example
+./test.sh
+```
+# this repo was created with:
 ```
 mkdir yocto_example
 cd yocto_example
