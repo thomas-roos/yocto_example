@@ -24,8 +24,9 @@ bitbake-layers create-layer ../meta-example
 bitbake-layers add-layer ../meta-example
 git add conf/local.conf
 git add conf/bblayers.conf
-echo 'DL_DIR = "${TOPDIR}/../../downloads"' >> conf/local.conf 
-echo 'SSTATE_DIR ?= "${TOPDIR}/../../sstate-cache"' >> conf/local.conf 
+echo 'DL_DIR = "${TOPDIR}/../../downloads"' >> conf/site.conf 
+echo 'SSTATE_DIR ?= "${TOPDIR}/../../sstate-cache"' >> conf/site.conf 
+git add conf/bblayers.conf
 cd ..
 echo "build/*" >> .gitignore
 git add .gitignore
