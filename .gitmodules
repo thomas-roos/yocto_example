@@ -1,0 +1,12 @@
+[submodule "poky"]
+	path = poky
+	url = https://git.yoctoproject.org/poky
+	branch = master
+[submodule "meta-openembedded"]
+	path = meta-openembedded
+	url = https://github.com/openembedded/meta-openembedded.git
+	branch = master
+[submodule "meta-aws"]
+	path = meta-aws
+	url = https://github.com/aws4embeddedlinux/meta-aws.git
+	branch = master
