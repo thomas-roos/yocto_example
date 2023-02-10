@@ -274,7 +274,7 @@ mqtt_connection_not_resend_packets_on_healthy_connection  \
 mqtt_connection_destory_pending_requests  \
 mqtt_clean_session_not_retry  \
 mqtt_clean_session_discard_previous  \
-mqtt_clean_session_keep_next_session  \	
+mqtt_clean_session_keep_next_session  \
 "
 
 for TEST in $MQTT_TESTS
