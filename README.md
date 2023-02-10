@@ -1,3 +1,6 @@
+# info:
+This repo is to help to reproduce bugs etc.
+In the future there will be separate branches for this.
 # checkout:
 ```
 git clone --recurse-submodules https://github.com/thomas-roos/yocto_example.git
