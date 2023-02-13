@@ -9,7 +9,7 @@ sudo apt install gawk wget git diffstat unzip texinfo gcc build-essential chrpat
 ```
 # checkout:
 ```
-git clone --recurse-submodules https://github.com/thomas-roos/yocto_example.git
+git clone -b aws-sdk-cpp_issue_2242  --recurse-submodules https://github.com/thomas-roos/yocto_example.git
 ```
 # build:
 be aware that this can take several hours and needs up to 100GB disk space!
@@ -17,12 +17,8 @@ be aware that this can take several hours and needs up to 100GB disk space!
 cd yocto_example
 ./build.sh
 ```
-# test:
-```
-cd yocto_example
-./test.sh
-```
-# this repo was created with:
+
+# INFO: this repo was created with:
 ```
 mkdir yocto_example
 cd yocto_example
