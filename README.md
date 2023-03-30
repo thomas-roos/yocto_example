@@ -1,5 +1,5 @@
 # info:
-This repo is to help to reproduce bugs etc.
+This repo is to help to test sstate caching in buildbot.
 In the future there will be separate branches for this.
 
 # required packages:
