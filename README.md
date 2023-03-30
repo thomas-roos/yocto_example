@@ -1,6 +1,5 @@
 # info:
 This repo is to help to test sstate caching in buildbot.
-In the future there will be separate branches for this.
 
 # required packages:
 You must install essential host packages on your build host. The following command installs the host packages based on an Ubuntu distribution: (https://docs.yoctoproject.org/singleindex.html)
