@@ -34,6 +34,7 @@ source poky/oe-init-build-env build
 bitbake-layers add-layer ../meta-openembedded/meta-oe
 bitbake-layers add-layer ../meta-openembedded/meta-python
 bitbake-layers add-layer ../meta-openembedded/meta-networking
+bitbake-layers add-layer ../meta-openembedded/meta-multimedia
 bitbake-layers add-layer ../meta-aws
 bitbake-layers create-layer ../meta-example
 bitbake-layers add-layer ../meta-example
@@ -53,6 +54,7 @@ manually change build/conf/bblayers.conf path
   ${TOPDIR}/../meta-openembedded/meta-oe \
   ${TOPDIR}/../meta-openembedded/meta-python \
   ${TOPDIR}/../meta-openembedded/meta-networking \
+  ${TOPDIR}/../meta-openembedded/meta-multimedia \
   ${TOPDIR}/../meta-aws \
 
 git commit -m "Initial commit"
