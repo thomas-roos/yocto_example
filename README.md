@@ -9,7 +9,7 @@ sudo apt install gawk wget git diffstat unzip texinfo gcc build-essential chrpat
 ```
 # checkout:
 ```
-git clone --recurse-submodules https://github.com/thomas-roos/yocto_example.git
+git clone --recurse-submodules https://github.com/thomas-roos/yocto_example.git -b awslabs_aws-iot-device-client_issues_411_backport_solved_issue
 ```
 # build:
 be aware that this can take several hours and needs up to 100GB disk space!
