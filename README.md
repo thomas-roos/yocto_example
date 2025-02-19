@@ -57,3 +57,37 @@ manually change build/conf/bblayers.conf path
 
 git commit -m "Initial commit"
 ```
+```mermaid
+sequenceDiagram
+    participant Peer A
+    participant Signaling Server
+    participant Peer B
+    
+    Peer A->>Peer A: Create RTCPeerConnection
+    Peer B->>Peer B: Create RTCPeerConnection
+    
+    Peer A->>Peer A: Create Offer
+    Peer A->>Peer A: Set Local Description
+    Peer A->>Signaling Server: Send Offer
+    Signaling Server->>Peer B: Forward Offer
+    
+    Peer B->>Peer B: Set Remote Description
+    Peer B->>Peer B: Create Answer
+    Peer B->>Peer B: Set Local Description
+    Peer B->>Signaling Server: Send Answer
+    Signaling Server->>Peer A: Forward Answer
+    
+    Peer A->>Peer A: Set Remote Description
+    
+    Note over Peer A,Peer B: ICE Candidate Exchange
+    
+    Peer A->>Signaling Server: Send ICE Candidates
+    Signaling Server->>Peer B: Forward ICE Candidates
+    Peer B->>Signaling Server: Send ICE Candidates
+    Signaling Server->>Peer A: Forward ICE Candidates
+    
+    Note over Peer A,Peer B: Direct P2P Connection Established
+    
+    Peer A-->>Peer B: Media Stream Exchange
+    Peer B-->>Peer A: Media Stream Exchange
+```
